@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Buying And Selling Site | abc.com</title>
+    <link rel=stylesheet type=text/css href="a.css">
+<link rel=stylesheet type=text/css href="slideshow.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+</head>
+<body  >
+       
+<div class="navbar">
+
+  <a href=" " style="margin-left:80px;font-family: Comic Sans MS;font-size:30px">Quikr</a>
+  
+ 
+<select style="width:40%;padding:10px">
+<option> All Categories</option>
+<option> <a href=" inova.html">Cars </a></option>
+<option> Furniture</option>
+<option> Furniture</option>
+<option> Furniture</option>
+<option> Furniture</option>
+<option> CONSULTANT</option>
+<option> SECRETARY</option>
+</select>
+
+  <a href=" log.html" style="margin-left:100px"> Login/Sign Up </a>
+
+  <a href=" "> <i class='fas fa-shopping-cart' style='font-size:30px; padding:24px'></i>Cart </a>
+</div>
+
+<br>
+
+
+
+<div class="slideshow-container" style="padding: 50px;margin-top:100px;" >
+
+  
+  <div class="mySlides fade">
+    <img src="s1.jpg" style="width:100%">
+   
+  </div>
+
+  <div class="mySlides fade">
+    <img src="s2.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+    <img src="s3.png" style="width:100%">
+    
+  </div>
+
+<div class="mySlides fade">
+    <img src="s4.jpg" style="width:100%">
+    
+  </div>
+
+<div class="mySlides fade">
+    <img src="s5.jpg" style="width:100%">
+    
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+
+ <table border="0" cellspacing="30" align="center" width="70%" >
+<tr>
+
+<td>
+<a href=" inova.html">
+<img class="h" src="inova.jpg"> <br>
+<h3>Toyota Innova 2.5 VX BS IV 8 STR – 2014</h3>  
+<p>85,000 kms / Diesel </p> 
+<h4> 11,00,000</h4>
+</a>
+
+</td>
+
+<td>
+<a href=" mobile.html">
+<img class="h" src="mobile.jpg"> <br>
+<h3>Xiaomi Mi A2</h3>  
+<p>4GB RAM | 64GB ROM </p> 
+<h4> 17,000</h4>
+</a>
+
+</td>
+
+<td>
+<a href=" inova.html">
+<img class="h" src="sofa2.jpg"> <br>
+<h3>Sofa Set 3 + 1 + 1 Seater Fabric </h3>  
+<p>Black color / Brand New </p> 
+<h4> 40,000</h4>
+</a>
+
+
+</td>
+</tr>
+
+<tr>
+</tr>
+<tr>
+</tr>
+
+<tr>
+
+<td>
+<a href=" inova.html">
+<img class="h" src="lappy.jpg"> <br>
+<h3>Apple Mac book Pro 2014 model</h3>  
+<p>15-15.9 inches In </p> 
+<h4> 69,000</h4>
+</a>
+
+</td>
+<td>
+<a href=" inova.html">
+<img class="h" src="treadmill.jpg"> <br>
+<h3>Powermax Fitness TDA-230M (2.0 Hp)</h3>  
+<p>Semi-Auto Lubrication | Motorized </p> 
+<h4> 35,000</h4>
+</a>
+
+</td>
+<td>
+
+<a href=" inova.html">
+<img class="h" src="shoes.jpg"> <br>
+<h3>Nike sports shoes</h3>  
+<p>Brand New </p> 
+<h4> 5,000</h4>
+</a>
+
+</td>
+</tr>
+
+
+<tr>
+</tr>
+<tr>
+</tr>
+
+<tr>
+
+<td>
+<a href=" inova.html">
+<img class="h" src="wash.jpg"> <br>
+<h3>Whirlpool Top Loading Washing Machine </h3>  
+<p>6.5 KG Fully Automatic </p> 
+<h4> 12,860</h4>
+</a>
+
+</td>
+</tr>
+</table>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    
+  </div>
+</body>
+</html>
